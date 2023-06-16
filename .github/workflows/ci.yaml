@@ -31,7 +31,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/alpine-curl-kubectl:latest
       -
-        name: Build and push gcloud-kubectl
+        name: Build and push alpine-gcloud-kubectl
         uses: docker/build-push-action@v4
         with:
           context: "{{defaultContext}}:dev-util"

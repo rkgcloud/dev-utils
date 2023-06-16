@@ -34,6 +34,6 @@ jobs:
         name: Build and push alpine-gcloud-kubectl
         uses: docker/build-push-action@v4
         with:
-          context: "{{defaultContext}}:dev-util"
+          context: "{{defaultContext}}:gcloud-sdk"
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/alpine-gcloud-kubectl:latest        

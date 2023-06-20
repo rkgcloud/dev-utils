@@ -2,7 +2,7 @@ name: CI
 
 on:
   schedule:
-    - cron: "* * * * 2"
+    - cron: "0 0 * * TUE"
   push:
     branches:
       - 'main'

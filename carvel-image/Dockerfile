@@ -1,4 +1,4 @@
-FROM harbor-repo.vmware.com/dockerhub-proxy-cache/paketobuildpacks/build-jammy-base:latest
+FROM paketobuildpacks/build-jammy-base:latest
 
 USER root
 RUN apt-get update && apt-get install -y jq git && \

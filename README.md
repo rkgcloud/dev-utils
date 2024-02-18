@@ -9,3 +9,4 @@ Various Development Utilities
 - `alpine-curl-kubectl`
 - `alpine-gcloud-kubectl`
 - `ubuntu-curl-kubectl`
+- `carvel-tools`

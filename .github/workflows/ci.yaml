@@ -50,4 +50,11 @@ jobs:
         with:
           context: "{{defaultContext}}:fsc-fp-test"
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/fsc-fp-test:latest     
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/fsc-fp-test:latest
+
+      - name: Build and push Carvel tools
+        uses: docker/build-push-action@v5
+        with:
+          context: "{{defaultContext}}:carvel-image"
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/carvel-image:latest
